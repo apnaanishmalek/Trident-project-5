@@ -1,0 +1,403 @@
+
+*{
+    font-family: sans-serif;
+}
+.main{
+    background: rgb(241,241,241);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(0,70,191,1) 0%, rgba(88,149,255,1) 100%);
+}
+.nav-link{
+    color: white;
+    font-size: 17px;
+}
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.411);
+}
+.hover-1{
+    display: none;
+}
+.d-1:hover .hover-1{
+    display: inline;
+}
+.nav-button{
+    background: rgba(0, 0, 0, 0.39);
+}
+.nav-button:hover{
+    background-color: #000;
+}
+
+.sec-card{
+    background-color: blue;
+    color: white;
+    border: 1.5px solid #fff;
+}
+.sp-i{
+    bottom: -25px;background-color: darkblue;
+    transition: .3s all ease-in-out;
+}
+.sp-i:hover{
+    bottom: -19px;
+    transition: .3s all ease-in-out;
+    background-color: black;
+}
+.sp-i2{
+    background: #000;
+    animation-name: pulse;
+    animation-duration: 0.9s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+}
+.sp-i2:hover{
+    background-color: blue;
+}
+
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.774);
+        box-shadow: 0 0 0 10px rgba(246, 246, 246, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+.for-p{
+      margin-left: -30px;
+  }
+  .fourth:hover .for-card1{
+      opacity: 1;
+  }
+.for-card{
+    background-color: #2b72ee;transition: .2s all ease-in-out;
+    
+  }
+.for-card:hover{
+    background-color: #14397a;transition: .2s all ease-in-out;
+}
+@keyframes for-card{
+    0%{
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fourth:hover .f-1{
+    animation-name: for-card;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+.fourth:hover .f-2{
+    animation-name: for-card;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.fourth:hover .f-3{
+    animation-name: for-card;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+.fourth:hover .f-4{
+    animation-name: for-card;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.fifth-card{
+    height: 220px;
+    background-color: white;
+    border-radius: 20px;
+    border: 6px solid blue;
+    transition: .2s all ease-in-out;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.37);
+}
+.fifth-card:hover{
+    transition: .2s all ease-in-out;
+    border-radius: 0px;
+}
+.fifth-card-head{
+    border-bottom: 2px solid blue;
+}
+.six{
+    overflow: hidden;
+}
+.s-img{
+    bottom: -30px;
+    right: 30px;
+    transition: 1s all ease-in-out;
+}
+.six:hover .s-img{
+    animation-name: six-img;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.six:hover .six-img{
+    animation-name: six-img;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes six-img{
+    0%{
+        transform: translateX(-350px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.six:hover .s-text{
+    animation-name: s-text;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes s-text{
+    0%{
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.seven{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(SEVEN.jpg);
+    position: relative;
+}
+.seven::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;opacity: 80%;
+    background: rgb(241,241,241);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(0,70,191,1) 0%, rgba(88,149,255,1) 100%);
+}
+.nine:hover .nine-l{
+    animation-name: fadeInLeft;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+.nine:hover .nine-right{
+    animation-name: fadeInRight;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.ten-left{
+    background: rgb(241,241,241);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(0,70,191,1) 0%, rgba(88,149,255,1) 100%);
+}
+.ten:hover .ten-left{
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+.ten-card:hover  .bi-chevron-down{
+    opacity: 0;
+}
+.bi-chevron-up{
+    opacity: 0;
+}
+.ten-card:hover  .bi-chevron-up{
+    opacity: 1;
+}
+.ten-card:hover .ten-hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.ten-hover{
+    border-bottom: 2px solid black;
+}
+.ten-card p{
+    display: none;
+    transform: translateY(-100px);
+    transition: .5s all ease-in-out;
+}
+.ten-card:hover p{
+    transform: translateY(0);
+    transition: .5s all ease-in-out;
+    display: flex;
+}
+.eleven{
+    background: rgb(241,241,241);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(0,70,191,1) 0%, rgba(88,149,255,1) 100%);
+}
+@property --countone {
+    syntax: "<integer>";
+    initial-value: 250;
+    inherits: false;
+}
+.eleven:hover .count-one{
+    animation: counter1 1s 1 alternate ease-in-out;
+    counter-reset: counter1 var(--countone);
+    /* font: 800 40px system-ui; */
+}
+.count-one::after{
+    content: counter(counter1);
+}
+@keyframes counter1{
+    0%{
+        --countone: 0;
+    }
+    100%{
+        --countone: 250;
+    }
+}
+@property --counttwo {
+    syntax: "<integer>";
+    initial-value: 10;
+    inherits: false;
+}
+.eleven:hover .count-two{
+    animation: counter2 1s 1 alternate ease-in-out;
+    counter-reset: counter2 var(--counttwo);
+    /* font: 800 40px system-ui; */
+}
+.count-two::after{
+    content: counter(counter2);
+}
+@keyframes counter2{
+    0%{
+        --counttwo: 0;
+    }
+    100%{
+        --counttwo: 10;
+    }
+}
+
+@property --countthree {
+    syntax: "<integer>";
+    initial-value: 99;
+    inherits: false;
+}
+.eleven:hover .count-three{
+    animation: counter3 1s 1 alternate ease-in-out;
+    counter-reset: counter3 var(--countthree);
+    /* font: 800 40px system-ui; */
+}
+.count-three::after{
+    content: counter(counter3);
+}
+@keyframes counter3{
+    0%{
+        --countthree: 0;
+    }
+    100%{
+        --countthree: 99;
+    }
+}
+
+@property --countfour {
+    syntax: "<integer>";
+    initial-value: 200;
+    inherits: false;
+}
+.eleven:hover .count-four{
+    animation: counter4 1s 1 alternate ease-in-out;
+    counter-reset: counter4 var(--countfour);
+    /* font: 800 40px system-ui; */
+}
+.count-four::after{
+    content: counter(counter4);
+}
+@keyframes counter4{
+    0%{
+        --countfour: 0;
+    }
+    100%{
+        --countfour: 200;
+    }
+}
+/* .blog-card{
+    border: 2px solid red;
+} */
+.b-img{
+    transition: .3s all ease-in-out;
+}
+.blog-card:hover .b-img{
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+}
+.blog-card-text h3:hover{
+    color: blue;
+}
+.footer{
+    background: rgb(241,241,241);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(0,70,191,1) 0%, rgba(88,149,255,1) 100%);
+}
+.footer-heading{
+    border-bottom: 1px solid rgb(148, 148, 253);
+}
+.footer-icons{
+    background-color: rgba(0, 0, 0, 0.493);
+    transition: .2s all ease-in-out;
+    padding: 8px 10px;
+}
+.footer-icons:hover{
+    transition: .2s all ease-in-out;
+    background-color: blue;
+    cursor: pointer;
+}
+.footer-p:hover{
+    color: rgb(165, 165, 238);
+}
+.tem{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+.job{
+    transition: .4s all ease-in-out;
+}
+.job:hover{
+    transform: scale(1.1);cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+body {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #4839f1;
+    --sb-size: 8px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
